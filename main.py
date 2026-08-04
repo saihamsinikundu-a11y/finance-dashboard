@@ -63,7 +63,7 @@ st.sidebar.markdown("---")
 st.sidebar.subheader("Portfolio Database Profiles")
 profile_name = st.sidebar.text_input("Save/Load Profile Name", "My_Tech_Growth")
 
-# Default ticker state string fallback
+# Default ticker state string
 current_tickers = "AAPL, MSFT, GOOG, AMZN"
 
 # Database profile loader trigger
