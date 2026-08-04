@@ -15,7 +15,7 @@ def fetch_marketdata(tickers):
 
 # --- STEP 2: STREAMLIT UI CONFIGURATION ---
 st.set_page_config(page_title="Pro Quant Dashboard", layout="wide")
-st.title("Quatitative Portfolio Optimization Dashboard")
+st.title("Quantitative Portfolio Optimization Dashboard")
 
 # Intiatize native Streamlit session state memory for profile persistence
 if "saved_profiles" not in st.session_state:
