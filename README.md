@@ -1,7 +1,7 @@
 # finance-dashboard
 # Quantitative Portfolio Optimization Dashboard
 
-This is a professional-grade financial analytics dashboard built with Python and Streamlit. The application utilizes modern portfolio theory and Monte Carlo simulations to calculate optimal asset allocation based on historical market risk and returns.
+This is a professional-grade financial analytics dashboard built with Python and Streamlit. The application specifically utilizes modern portfolio theory and Monte Carlo simulations to calculate optimal asset allocation based on historical market risk and returns.
 
 ## Core Features
 * **Live Market Sync:** It dynamically extracts real-time adjusted closing price data directly from the Yahoo Finance API (`yfinance`).
