@@ -152,7 +152,7 @@ if st.button("Run Portfolio Simulation Optimization"):
     }
 
     # -- STEP 7: STREAMLIT UI CAR METRICS ---
-    st.success(f"Dashboard data successfully optimized and synced to profile: {profile_name}!")
+    st.success(f"Active Profile Loaded: {profile_name}")
 
     st.subheader("Optimal Portfolio Matrix Performance")
     col1, col2, col3 = st.columns(3)
