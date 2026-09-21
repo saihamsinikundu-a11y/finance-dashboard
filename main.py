@@ -154,14 +154,14 @@ if st.button("Run Portfolio Simulation Optimization"):
     # -- STEP 7: STREAMLIT UI CAR METRICS ---
     st.success(f"Active Profile Loaded: {profile_name}")
 
-    st.subheader("Optimal Portfolio Matrix Performance")
+    st.header("Optimal Portfolio Matrix Performance")
     col1, col2, col3 = st.columns(3)
     col1.metric("Max Sharpe Ratio", f"{dashboard_data['sharpeRatio']:.2f}")
-    col2.metric("Expected Annual Return", f"{dashboard_data['totalReturns']}%")
-    col3.metric("Expected Volatility Risk", f"{dashboard_data['riskMetric']}%")
+    col2.metric("Estimated Expected Annual Return", f"{dashboard_data['totalReturns']}%")
+    col3.metric("Estimated Expected Volatility Risk", f"{dashboard_data['riskMetric']}%")
 
     # Render asset allocation breakdown table
-    st.subheader("Target Asset Weights Allocation")
+    st.header("Target Asset Weights Allocation")
     allocation_df = pd.DataFrame(list(optimal_allocation.items()), columns=["Ticker", "Weight (%)"])
     st.dataframe(allocation_df, use_container_width=True)
 
